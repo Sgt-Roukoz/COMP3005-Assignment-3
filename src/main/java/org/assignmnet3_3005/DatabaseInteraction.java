@@ -1,10 +1,19 @@
-package org.example;
+/**
+ * Database Interaction class represents a class with basic database interaction code with pre-specified database
+ *
+ * @author Marwan Zeid
+ * @version 2024-03-18
+ */
+package org.assignmnet3_3005;
 
 import java.sql.*;
 
 public class DatabaseInteraction {
     private Connection databaseConnection;
 
+    /**
+     * Constructor for database interaction
+     */
     public DatabaseInteraction()
     {
         try {
@@ -20,6 +29,9 @@ public class DatabaseInteraction {
         }
     }
 
+    /**
+     * Prints all tuples from the students table in database
+     */
     public void getAllStudents()
     {
         try{
@@ -39,6 +51,13 @@ public class DatabaseInteraction {
         }
     }
 
+    /**
+     * Adds a student tuple to the students table in database
+     * @param first_name first name of student
+     * @param last_name last name of student
+     * @param email email address of student
+     * @param enrollment_date enrollment date of student
+     */
     public void addStudent (String first_name, String last_name, String email, String enrollment_date)
     {
         try
@@ -51,6 +70,11 @@ public class DatabaseInteraction {
         }
     }
 
+    /**
+     * Updates the email of a specific student
+     * @param student_id student to be updated
+     * @param new_email new email to insert
+     */
     public void updateStudentEmail(int student_id, String new_email)
     {
         try
@@ -67,6 +91,10 @@ public class DatabaseInteraction {
         }
     }
 
+    /**
+     * Deletes a student tuple from list
+     * @param student_id Student to be deleted
+     */
     public void deleteStudent(int student_id)
     {
         try
@@ -82,6 +110,9 @@ public class DatabaseInteraction {
         }
     }
 
+    /**
+     * Closes the connection with database
+     */
     public void closeConnection()
     {
         try {
