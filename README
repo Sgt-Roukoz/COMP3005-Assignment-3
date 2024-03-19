@@ -25,6 +25,8 @@ and select the DDL file, which you will find in the project under src/Database S
 This should have created a named students, which you can see under Schemas>Tables in your database. Next we need to populate this table, so you
 must open the DML file this time, and run it, which will populate the table with some values.
 
-To run the application, navigate to the Main java class on the left side of the IDE, it should be under src > main > java > org.assignment3_3005
+Before running this application, navigate to the DatabaseInteraction file which is under src/main/java/org.assignment3_3005 (You can navigate through
+it on the left side of the IDE). Using the username and password you took note of, change the variables String user and String password to your
+username and password respectively. Next, to run this application navigate to the Main java class file, which should be in the same directory
 and then either click the Green arrow button next to the main method of the Main class or pressing Shift+F10. This will
 run the functions currently written in the main method (which at the moment is simply getting all students).
