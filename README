@@ -30,3 +30,5 @@ it on the left side of the IDE). Using the username and password you took note o
 username and password respectively. Next, to run this application navigate to the Main java class file, which should be in the same directory
 and then either click the Green arrow button next to the main method of the Main class or pressing Shift+F10. This will
 run the functions currently written in the main method (which at the moment is simply getting all students).
+
+Video Demonstration: https://youtu.be/hrwLup7ZveY
