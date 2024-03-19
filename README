@@ -1,0 +1,30 @@
+Assignment 3
+COMP3005B
+Winter 2024
+
+Author:
+Marwan Zeid
+
+What is this?:
+This is a submission for COMP3005 Assignment 3 - Part 1
+
+This project serves to demonstrate Java's Database Driver for postgreSQL, and how you would connect to a known database through
+Java code.
+
+Installation:
+Download the repository from GitHub as a ZIP
+Extract COMP3005-Assignment3-master.zip
+Open IntelliJ
+Click Open and select COMP3005-Assignment3-master project folder inside the extracted folder
+
+To Use This:
+First you must create a database with PostgreSQL, to do this, run pgAdmin4 and login. Keep note of your username and password.
+Under Servers, right-click Databases and Create>Database... Name this database Students and click save. Now the database has been created
+Next we need to put some data. To do this, right-click the database you just created and select Query Tool. Now select the folder Icon (Open File)
+and select the DDL file, which you will find in the project under src/Database Scripts. Now run it by pressing F5 or the arrow in pgAdmin4.
+This should have created a named students, which you can see under Schemas>Tables in your database. Next we need to populate this table, so you
+must open the DML file this time, and run it, which will populate the table with some values.
+
+To run the application, navigate to the Main java class on the left side of the IDE, it should be under src > main > java > org.assignment3_3005
+and then either click the Green arrow button next to the main method of the Main class or pressing Shift+F10. This will
+run the functions currently written in the main method (which at the moment is simply getting all students).

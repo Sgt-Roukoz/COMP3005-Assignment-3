@@ -21,7 +21,7 @@ public class DatabaseInteraction {
             String url = "jdbc:postgresql://localhost:5432/Students";
             String user = "postgres";
             String password = "z3i0";
-            databaseConnection= DriverManager.getConnection(url, user, password);
+            databaseConnection = DriverManager.getConnection(url, user, password);
             if (databaseConnection != null) System.out.println("Connected Successfully");
             else System.out.println("Connection Failed");
         } catch (SQLException | ClassNotFoundException e) {
